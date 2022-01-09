@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!--This is a commentary.--> 
+<html>          <!--Opening label (What's inside my HTML file).-->
+<head>          <!--It's taken as the first son.-->
+    <meta charset="utf-8">      <!--it makes that accents and "ñ"'to work.-->  
+    <title>My first serius project</title>
+    <script type="text/javascript"> //Generally you insert the JavaScript script before the visual level loads.So you should add the Script and then the head. Inside Js the commentary it's typed with a double slash.
+    //alert("Hello World");       //alert is a function inside js. It shows a messege in your HTML page. ready similar to the print function in python. It takes parameters as variables, text, etc.
+
+function showName(n)
+{
+    //document. is a special function inside JavaScript that loads all <body> </body>.
+    //getElementById("") is a method that lets you obtain a message by his id.
+    //.innerHTML is an attributte.  It's the text inside a <p></p> label.
+
+    document.getElementById("message").innerHTML = n;
+
+    //showName function let's you change the text inside the paragraph with id="message" to a text you give as an argumente inside the showName Function.
+    
+}
+
+function sum(a,b) // Functions are really similar to python functions. In this case "sum" takes two arguments, adds them and return the result as "result".
+{
+    let result = a + b;  //The algorith(Ordered steps) of "sum" function
+    alert("The result of the sum is: " + result);    //We print the result of our funtion.First with the text "The result of the sum is: and then the "result" variable.
+                                                    // If we use a function. Always remember to close it with an ";" Ex. alert("Hello World");
+}
+
+    </script> 
+
+</head>         <!--What i prepare visually before the page loads.-->
+<body>          <!--Body label(what's visuable inside the page) --> <!--Brother of the head, second son.-->
+    <h1>Tittle of my serius project</h1>    <!--The 'h' refers de Heading(Titles).It goes from 1 to 6 were 'h1' is the bigger and 'h6' the smallest.-->
+    <p>This is a really serius project</p>    <!--The 'p' are paragraph sections, where text can be added.-->
+    <p id="message">Loading...</p>
+    <script type="text/javascript"> //First we load the script in order to use showName function.
+    showName("Pancracio");  //We give the text "Pancracio" to our function. So in the paragraph in line 36. The text "Loading..." will be replaced with "Pancracio"
+    </script>
+</body>
+</html>         <!--Closing label-->
+
+<!--A Few Rules!!-->
+<!--Outside of the <body> you can't put anything.-->
+<!--Between the </body> and </html> you can't put anything.-->
+<!--Between the </head> and <body> you can't put anything.-->
